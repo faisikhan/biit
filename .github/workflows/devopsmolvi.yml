@@ -30,10 +30,10 @@ jobs:
         run: |
             docker push 559050236729.dkr.ecr.us-east-1.amazonaws.com/dev/nodeimages:latest
 
-      # - name: Revisions on ECS with Updated Docker Images
-      #   uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-      #   with:
-      #     task-definition: ecs-task.json
-      #     service: sharks-ecs-srv
-      #     cluster: sharks-app-cluster
-      #     wait-for-service-stability: true            
+      - name: Revisions on ECS with Updated Docker Images
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: ecs-task.json
+          service: devopsmolvi-ecs-srv
+          cluster: devopsmolvi-ecs
+          wait-for-service-stability: true            
