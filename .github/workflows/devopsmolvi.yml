@@ -36,5 +36,5 @@ jobs:
           task-definition: ecs-task.json
           service: devopsmolvi-ecs-srv
           cluster: devopsmolvi-ecs
-          wait-for-service-stability: true            
           container-name: devopsmolvi-ecs
+          wait-for-service-stability: true        
