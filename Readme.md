@@ -2,7 +2,7 @@
 
 This is a Node JS app by DigitalOcean to build and run a Node JS appliation on a Docker image with the help of Dockerfile. 
 
-So we are containerizing the application and pushing it to ECR and deploying it on AWS App Runner or ECS.
+So we are containerizing the application and pushing it to ECR and deploying it on AWS App Runner or ECS. We're going to cover both manual and automatic deployments.
 
 # Requirements
 
@@ -33,4 +33,6 @@ It will ask for the Access Key and Secret Access Key.
 ## Login to ECR
 
 `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 559050236729.dkr.ecr.us-east-1.amazonaws.com`
+
+
 
