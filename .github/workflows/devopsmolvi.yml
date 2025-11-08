@@ -10,8 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4    
-
-      - name: Build the Docker Image
+      - name: Barani CI/CD
         run: |
          docker build . --tag 559050236729.dkr.ecr.us-east-1.amazonaws.com/dev/nodeimages:latest
          
