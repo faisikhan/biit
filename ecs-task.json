@@ -1,5 +1,5 @@
 {
-  "family": "devopsmolvi-ecs",
+  "family": "devopsmolvi-ecs-tasks",
   "networkMode": "awsvpc",
   "executionRoleArn": "arn:aws:iam::559050236729:role/ecsTaskExecutionRole",
   "containerDefinitions": [
