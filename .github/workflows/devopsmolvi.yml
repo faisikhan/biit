@@ -2,7 +2,7 @@ name: Build and Deploy NodeJS App on AWS
 on:
   push:
     branches:
-    - mainnnn
+    - main
   
 jobs:
   Build-App:
