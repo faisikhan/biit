@@ -2,7 +2,7 @@ name: Build and Deploy NodeJS App on AWS
 on:
   push:
     branches:
-    - main
+    - mainnnn
   
 jobs:
   Build-App:
@@ -13,7 +13,7 @@ jobs:
 
       - name: Build the Docker Image
         run: |
-         docker build . --tag 559050236729.dkr.ecr.us-east-1.amazonaws.com/dev/sharkappimages:latest
+         docker build . --tag 559050236729.dkr.ecr.us-east-1.amazonaws.com/dev/nodeimages:latest
          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -28,7 +28,7 @@ jobs:
 
       - name: Push the Image to AWS ECR
         run: |
-            docker push 559050236729.dkr.ecr.us-east-1.amazonaws.com/dev/sharkappimages:latest
+            docker push 559050236729.dkr.ecr.us-east-1.amazonaws.com/dev/nodeimages:latest
 
       - name: Revisions on ECS with Updated Docker Images
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
